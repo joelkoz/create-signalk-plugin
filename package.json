@@ -1,0 +1,22 @@
+{
+  "name": "create-signalk-plugin",
+  "version": "1.0.0",
+  "description": "npm initializer module to drive Signalk plugin creation",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "signalk",
+    "plugin",
+    "development"
+  ],
+  "author": "Joel Kozikowski",
+  "license": "ISC",
+  "dependencies": {
+    "generator-signalk-plugin": "^1.0.0",
+    "yeoman-environment": "^2.4.0"
+  },
+  "bin": {
+    "create-signalk-plugin": "./bin/cli.js"
+  }
+}
