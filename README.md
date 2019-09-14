@@ -23,7 +23,7 @@ Answer the questions, and a new project will be generated for you.
 ## WebApp development considerations
 
 If you specified that you would like a WebApp to be part of your plugin, the project generator will install
-additional directories and files to support a web UI using React.  The `src` directory will contain a place
+additional directories and files to support a web UI using [React](https://reactjs.org/).  The `src` directory will contain a place
 for you to put [JSX files](https://reactjs.org/docs/jsx-in-depth.html).  Those files need to be translated into regular Javascript files and placed in the `public` 
 directory so they can be served up by the Node server.  To do that translation, open a terminal window, make sure your project directory is the current working directory, then issue the following command:
 
