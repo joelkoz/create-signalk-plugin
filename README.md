@@ -18,4 +18,19 @@ working directory, then run the generator using:
 npm init signalk-plugin
 ```
 
-Answer the questions, and voila!
+Answer the questions, and a new project will be generated for you.
+
+## WebApp development considerations
+
+If you specified that you would like a WebApp to be part of your plugin, the project generator will install
+additional directories and files to support a web UI using React.  The `src` directory will contain a place
+for you to put [JSX files](https://reactjs.org/docs/jsx-in-depth.html).  Those files need to be translated into regular Javascript files and placed in the `public` 
+directory so they can be served up by the Node server.  To do that translation, open a terminal window, make sure your project directory is the current working directory, then issue the following command:
+
+```
+npx babel --watch src --out-dir public --presets react-app/prod
+```
+
+The above command runs the [Babel](https://babeljs.io/) translator, and will translate any JSX file in 
+the `src` directory into pure Javascript and copy the resulting file into the `public` directory for you.
+
