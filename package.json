@@ -18,5 +18,9 @@
   },
   "bin": {
     "create-signalk-plugin": "./bin/cli.js"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joelkoz/create-signalk-plugin"
+  }  
 }
