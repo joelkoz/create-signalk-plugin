@@ -32,5 +32,9 @@ npx babel --watch src --out-dir public --presets react-app/prod
 ```
 
 The above command runs the [Babel](https://babeljs.io/) translator, and will translate any JSX file in 
-the `src` directory into pure Javascript and copy the resulting file into the `public` directory for you.
+the `src` directory into pure Javascript and copy the resulting file into the `public` directory for you. The
+`--watch` option causes the command to continue to run in the background, (re)generating any files necessary.
+Simply modify an exising .JSX file in the `src` directory, or create a new JSX file, and Babel will do
+the translation immediately.  Any errors in translation will appear in the same window the `npx babel` command
+was executed in.
 
